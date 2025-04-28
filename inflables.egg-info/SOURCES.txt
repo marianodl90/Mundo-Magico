@@ -1,0 +1,8 @@
+setup.py
+alquiler_inflables/__init__.py
+alquiler_inflables/cliente.py
+alquiler_inflables/menu.py
+inflables.egg-info/PKG-INFO
+inflables.egg-info/SOURCES.txt
+inflables.egg-info/dependency_links.txt
+inflables.egg-info/top_level.txt
