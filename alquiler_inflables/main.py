@@ -1,5 +1,5 @@
-from alquiler_inflables.cliente import Cliente
-from alquiler_inflables.cliente import Reserva
+from paquete_cliente import Cliente
+from paquete_cliente import Reserva
 
 
 

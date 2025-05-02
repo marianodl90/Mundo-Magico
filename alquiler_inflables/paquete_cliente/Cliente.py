@@ -8,18 +8,6 @@ class Persona:
         self.apellido = apellido
         
 
-class Reserva:
-    def __init__(self, fecha, plaza:str, direccion:str, seña:int):
-        self.fecha = datetime(*fecha)
-        self.plaza = plaza
-        self.direccion = direccion
-        self.seña = seña
-        
-    def __str__(self):
-        fecha_formateada = self.fecha.strftime('%d/%m/%Y %H:%M')
-        return f"Se reservo {self.plaza} el dia {fecha_formateada} en la dirección {self.direccion}, y se pago de seña {self.seña} pesos"
-    
-
 class Cliente (Persona):
     def __init__(self, nombre:str, apellido:str, telefono:int):
         super().__init__(nombre, apellido)
@@ -33,7 +21,7 @@ class Cliente (Persona):
         self.reservas.append(reserva)
         
     def mostrar_reserva(self):
-      
+       pass
        
     
     def eliminar_reserva(self):
