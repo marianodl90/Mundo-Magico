@@ -1,5 +1,5 @@
 from datetime import datetime
-
+from paquete_cliente.Reserva import Reserva
 
 
 class Persona:
@@ -15,16 +15,20 @@ class Cliente (Persona):
         self.reservas = []
   
     def __str__(self):
-         print(f"Reserva realizada \nEl nombre del cliente es {self.nombre} {self.apellido}, y su telefono es {self.telefono}") 
+         return f"Reserva realizada \nEl nombre del cliente es {self.nombre} {self.apellido}, y su telefono es {self.telefono}"
 
     def agregar_reserva(self, reserva):
         self.reservas.append(reserva)
         
     def mostrar_reserva(self):
-       pass
-       
+        print(self.reservas)
     
-    def eliminar_reserva(self):
-       pass
+    def eliminar_reserva(self, indice: int):
+        if 0 <= indice < len(self.reservas):
+            reserva_eliminada = self.reservas.pop(indice)
+            print("Reserva eliminada")
+        else:
+            print("Índice de reserva inválido.")
+
 
 

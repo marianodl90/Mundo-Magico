@@ -11,3 +11,6 @@ class Reserva:
     def __str__(self):
         fecha_formateada = self.fecha.strftime('%d/%m/%Y %H:%M')
         return f"Se reservo {self.plaza} el dia {fecha_formateada} en la dirección {self.direccion}, y se pago de seña {self.seña} pesos"
+    
+
+    
