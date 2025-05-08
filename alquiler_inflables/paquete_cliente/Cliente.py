@@ -21,8 +21,12 @@ class Cliente (Persona):
         self.reservas.append(reserva)
         
     def mostrar_reserva(self):
-        print(self.reservas)
-    
+        if not self.reservas:
+            print("No existe reserva")
+        else:
+            print(self.reservas[-1])
+
+            
     def eliminar_reserva(self, indice: int):
         if 0 <= indice < len(self.reservas):
             reserva_eliminada = self.reservas.pop(indice)
